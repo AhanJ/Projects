@@ -1,1 +1,1 @@
-HitaBot is a chat bot made using Rasa Open Source for Hitachi Systems India’s website. It is has a responsive and visually appealing UI.
+HitaBot is a chatbot designed for Hitachi Systems India's website. It features a responsive and visually appealing user interface, is built using Rasa Open Source, and served via Django.
