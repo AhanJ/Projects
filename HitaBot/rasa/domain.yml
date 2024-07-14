@@ -1,0 +1,365 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - company_info
+  - company_clients
+  - company_overview
+  - company_info_solutions
+  - company_info_services
+  - aws_overview
+  - aws_services
+  - govt_practice
+  - contact_us
+
+responses:
+  utter_greet:
+    - text: "Hello there! How can I assist you today?"
+    - text: "Hi! How can I help you today?"
+    - text: "Good day! How may I assist you?"
+    - text: "Hey! Need any help from me?"
+    - text: "Welcome! How can I assist you right now?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+    - text: "It was nice chatting with you! Take care!"
+    - text: "Until next time! Have a wonderful day!"
+    - text: "Thanks for chatting with me! See you soon!"
+    - text: "Goodbye! Let me know if you need anything else!"
+
+  utter_iamabot:
+    - text: "Hello! You're chatting with HitaBot. How can I assist you today?"
+    - text: "Hi there! I'm HitaBot. How can I help you?"
+    - text: "Hey, it's HitaBot here! What can I do for you?"
+    - text: "Greetings! I'm HitaBot, your virtual assistant. How may I assist you?"
+
+  utter_please_rephrase:
+    - text: "I'm not sure how to help with that. Please rephrase your question or contact us directly for assistance."
+      buttons:
+        - title: "Contact Us"
+          payload: "https://hitachi-systems.co.in/contact.php"
+
+    - text: "I'm having trouble understanding. Could you clarify or reach out to us for personalized help?"
+      buttons:
+        - title: "Contact Us"
+          payload: "https://hitachi-systems.co.in/contact.php"
+
+    - text: "I'm not sure what you're asking. Please try a different question or contact our support team for more information."
+      buttons:
+        - title: "Contact Us"
+          payload: "https://hitachi-systems.co.in/contact.php"
+
+  utter_company_info:
+    - text: "At Hitachi Systems India, we use technology to fuel business growth and enhance social infrastructure. With decades of experience in operational technology and information technology, Hitachi is a pioneer in developing advanced solutions."
+      buttons:
+        - title: "Contact Us"
+          payload: "https://hitachi-systems.co.in/contact.php"
+        - title: "Learn More"
+          payload: "/company_overview"
+
+    - text: "Hitachi Systems India leads digital transformation with integrated IT solutions for businesses. We cater to enterprises of all sizes across diverse industries with our multi-technology expertise."
+      buttons:
+        - title: "Contact Us"
+          payload: "https://hitachi-systems.co.in/contact.php"
+        - title: "Learn More"
+          payload: "/company_overview"
+
+    - text: "At Hitachi Systems India, we're dedicated to helping businesses thrive in the digital age. Our goal is to make businesses more agile in response to evolving technology landscapes."
+      buttons:
+        - title: "Contact Us"
+          payload: "https://hitachi-systems.co.in/contact.php"
+        - title: "Learn More"
+          payload: "/company_overview"
+
+  utter_company_clients:
+    - text: "We proudly serve clients across diverse industries, including TATA Power in Power & Utility, Fino Payments Bank in Finance, BAG Films in Media & Entertainment, AU Small Finance Bank in Banking, JK Tyre in Travel, Transformation & Logistics, and Hitachi India in R&D."
+
+    - text: "Our esteemed clients span various sectors: TATA Power in Power & Utility, Fino Payments Bank in Finance, BAG Films in Media & Entertainment, AU Small Finance Bank in Banking, JK Tyre in Travel, Transformation & Logistics, and Hitachi India in R&D and many more."
+
+    - text: "We collaborate with leading companies across different industries such as TATA Power in Power & Utility, Fino Payments Bank in Finance, BAG Films in Media & Entertainment, AU Small Finance Bank in Banking, JK Tyre in Travel, Transformation & Logistics, and Hitachi India in R&D."
+
+    - text: "We are trusted by top companies in multiple sectors, including TATA Power in Power & Utility, Fino Payments Bank in Finance, BAG Films in Media & Entertainment, AU Small Finance Bank in Banking, JK Tyre in Travel, Transformation & Logistics, and Hitachi India in R&D."
+
+  utter_company_overview:
+    - text: "We provide a wide range of solutions and services tailored to meet your business needs. Select an option to learn more."
+      buttons:
+        - title: "Digital Workplace Solutions"
+          payload: "digital_workplace_solutions"
+        - title: "Security Solutions"
+          payload: "security_solutions"
+        - title: "Automation Solutions"
+          payload: "automation_orchestration_solutions"
+        - title: "Cloud and Data Centre Solutions"
+          payload: "cloud_data_centre_solutions"
+        - title: "Infrastructure Managed Services"
+          payload: "infrastructure_managed_services"
+        - title: "Data Center Services"
+          payload: "data_center_services"
+        - title: "Managed Security Services"
+          payload: "managed_security_services"
+        - title: "Cloud Services"
+          payload: "cloud_services"
+        - title: "Device-as-a-Service (DaaS)"
+          payload: "device_as_a_service"
+        - title: "AWS Offerings"
+          payload: "aws_overview"
+        - title: "Contact Us"
+          payload: "https://hitachi-systems.co.in/contact.php"
+
+    - text: "Discover our comprehensive suite of solutions and services, each crafted to enhance your business operations and drive growth. Choose an option to delve deeper into our offerings."
+      buttons:
+        - title: "Digital Workplace Solutions"
+          payload: "digital_workplace_solutions"
+        - title: "Security Solutions"
+          payload: "security_solutions"
+        - title: "Automation Solutions"
+          payload: "automation_orchestration_solutions"
+        - title: "Cloud and Data Centre Solutions"
+          payload: "cloud_data_centre_solutions"
+        - title: "Infrastructure Managed Services"
+          payload: "infrastructure_managed_services"
+        - title: "Data Center Services"
+          payload: "data_center_services"
+        - title: "Managed Security Services"
+          payload: "managed_security_services"
+        - title: "Cloud Services"
+          payload: "cloud_services"
+        - title: "Device-as-a-Service (DaaS)"
+          payload: "device_as_a_service"
+        - title: "AWS Offerings"
+          payload: "aws_overview"
+        - title: "Contact Us"
+          payload: "https://hitachi-systems.co.in/contact.php"
+
+    - text: "From innovative IT solutions to advanced security services, we have everything your business needs to succeed in the digital age. Take a closer look at our offerings to find the perfect match."
+      buttons:
+        - title: "Digital Workplace Solutions"
+          payload: "digital_workplace_solutions"
+        - title: "Security Solutions"
+          payload: "security_solutions"
+        - title: "Automation Solutions"
+          payload: "automation_orchestration_solutions"
+        - title: "Cloud and Data Centre Solutions"
+          payload: "cloud_data_centre_solutions"
+        - title: "Infrastructure Managed Services"
+          payload: "infrastructure_managed_services"
+        - title: "Data Center Services"
+          payload: "data_center_services"
+        - title: "Managed Security Services"
+          payload: "managed_security_services"
+        - title: "Cloud Services"
+          payload: "cloud_services"
+        - title: "Device-as-a-Service (DaaS)"
+          payload: "device_as_a_service"
+        - title: "AWS Offerings"
+          payload: "aws_overview"
+        - title: "Contact Us"
+          payload: "https://hitachi-systems.co.in/contact.php"
+
+  utter_company_info_solutions/digital_workplace_solutions:
+    - text: "Our Digital Workplace Solutions optimize workplace productivity for enhanced marketplace performance. We offer comprehensive technology and infrastructure support to meet modern workplace demands."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/solutions.php#digital_workplace"
+
+  utter_company_info_solutions/security_solutions:
+    - text: "Our security solutions provide a secure foundation to protect against malicious attacks and suspicious behavior."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/solutions.php#security"
+
+  utter_company_info_solutions/automation_orchestration_solutions:
+    - text: "Automation is key to successful digital transformation, spanning infrastructure, data, and applications. Our solutions are designed with built-in automation to enhance agility, efficiency, and security."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/solutions.php#automation_orchestration"
+
+  utter_company_info_solutions/cloud_data_centre_solutions:
+    - text: "We excel in delivering services that adapt to rapid business growth. Count on us for high-performance, agile infrastructure to meet new demands. We help businesses create value and achieve successful SLA operations for IT-enabled systems."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/solutions.php#cloud_and_data_centre_solutions"
+
+  utter_company_info_services/infrastructure_managed_services:
+    - text: "Our Managed Services empower organizations in the era of digital disruption. We offer agility, innovation, and cost-effective operations in a complex IT environment."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/services.php#infrastructure_managed_services"
+
+  utter_company_info_services/data_center_services:
+    - text: "We offer end-to-end data center capabilities to meet 24/7 demands. From design and build to optimization and modernization, we ensure cost-effective and future-proof solutions for your critical IT assets."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/services.php#data_center"
+
+  utter_company_info_services/managed_security_services:
+    - text: "Our Managed Security Services offer cybersecurity peace of mind in an era of frequent data breaches. Our end-to-end security solutions combine consulting, design, products, and services for a highly secure infrastructure."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/services.php#managed_security"
+
+  utter_company_info_services/cloud_services:
+    - text: "We help unlock new opportunities and create richer customer experiences through cloud strategies. We are empowering global enterprises to embrace cloud technology for digital transformation."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/services.php#cloud"
+        - title: "AWS Offerings"
+          payload: "aws_overview"
+
+  utter_company_info_services/device_as_a_service:
+    - text: "Our Device as a Service portfolio enhances organizational efficiency and end-user productivity by managing every phase of the device life cycle, from start to finish."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/services.php#device_as_a"
+
+  utter_aws_overview:
+    - text: "We provide managed cloud services to enterprises and small and medium businesses. As an Advanced Consulting Partner of Amazon Web Services, we offer outcome-based service offerings to simplify your journey to the cloud. Take a closer look at our offerings to find the perfect match."
+      buttons:
+        - title: "Storage Services"
+          payload: "storage_services"
+        - title: "EC2 Windows Services"
+          payload: "ec2_windows_services"
+        - title: "Cloud Migration Services"
+          payload: "cloud_migration_services"
+        - title: "Migration Readiness Assessment"
+          payload: "migration_readiness_assessment"
+        - title: "Managed Database Services"
+          payload: "managed_database_services"
+        - title: "Next-Gen Managed Services"
+          payload: "next_gen_managed_services"
+        - title: "Architected Review"
+          payload: "architected_review"
+        - title: "Security Solutions"
+          payload: "aws_security_solutions"
+        - title: "Content Delivery Solutions"
+          payload: "content_delivery_solutions"
+        - title: "Systems Manager"
+          payload: "systems_manager"
+        - title: "API Gateway"
+          payload: "api_gateway"
+        - title: "AWS Config"
+          payload: "config"
+        - title: "Managed Control Tower"
+          payload: "managed_control_tower"
+        - title: "More About AWS Services"
+          payload: "https://hitachi-systems.co.in/aws.php"
+        - title: "Contact Us"
+          payload: "https://hitachi-systems.co.in/contact.php"
+
+  utter_aws_services/storage_services:
+    - text: "We are an Advanced Consulting Partner to AWS and offers a complete range of cloud storage services to support application, storage and archival compliance requirements."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/aws-storage.php"
+
+  utter_aws_services/ec2_windows_services:
+    - text: "We Migrate and manage your Microsoft workload to the AWS cloud with a focus on security and regulatory compliance. Our solution architects can assist you in reviewing and designing your solution to increase efficiency, scalability, and minimize costs."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/e2c-windows-services.php"
+
+  utter_aws_services/cloud_migration_services:
+    - text: "Our migration services cover application, database, data warehouse, and Windows workload migration to AWS. We offer simple to complex migration solutions for improved performance, lower costs, scalability, agility, and stronger security."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/aws-cloud-migration-services.php"
+
+  utter_aws_services/migration_readiness_assessment:
+    - text: "Our Cloud Readiness Assessment offers a detailed analysis of your system, showcasing the benefits of cloud software for your business."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/migration-readiness.php"
+
+  utter_aws_services/managed_database_services:
+    - text: "We specialise in migrating on-premise databases to the cloud using AWS RDS technology. Our experts make setup, operation, and scaling easy, automating administration tasks for cost efficiency and seamless performance. With AWS RDS, developers can focus on commercial applications, ensuring quick performance, high availability, and security. Explore our tailored Database Migration Service for a smooth transition without downtime."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/RDS-services.php"
+
+  utter_aws_services/next_gen_managed_services:
+    - text: "Next-Gen Managed Services delivers a new standard of operations and management, which includes containerized environment support, DevOps/DevSecOps integration, serverless architecture support, service intelligence and high level of IT infrastructure automation."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/managed-services.php"
+
+  utter_aws_services/architected_review:
+    - text: "Our experience in solution building allows us to review your applications and workloads against best practices, identify improvement opportunities, and track progress over time. Let our solution architect experts help bring your solution up to best-practice standards and optimize your AWS usage for maximum efficiency."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/aws-book-review.php"
+
+  utter_aws_services/aws_security_solutions:
+    - text: "Our security solutions for social infrastructure are tailored to your on-site operations, backed by our expertise and experience."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/aws-security-solution.php"
+
+  utter_aws_services/content_delivery_solutions:
+    - text: "AWS CloudFront is a content delivery network (CDN) service by Amazon Web Services (AWS). It helps businesses deliver web pages, images, videos, and APIs to users quickly and efficiently."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/aws-content-delivery-solution.php"
+
+  utter_aws_services/systems_manager:
+    - text: "We offer comprehensive security and governance solutions, providing visibility across various standards and frameworks for your cloud journey. We leverage AWS Systems Manager to drive efficient and scalable operations in your AWS environment, ensuring security and control."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/aws-system-manager.php"
+
+  utter_aws_services/api_gateway:
+    - text: "Benefit from our expertise in seamlessly integrating technologies such as Amazon API Gateway into your systems. Amazon API Gateway is a fully managed service that simplifies API creation, publishing, monitoring, and security for developers, regardless of scale."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/aws-api-gateway.php"
+
+  utter_aws_services/config:
+    - text: "Our AWS Config solutions are tailored to align with your unique objectives, compliance, and security needs, backed by a proven track record. Our commitment to excellence ensures your AWS Config evolves with your business, providing ongoing value and support."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/aws-config.php"
+
+  utter_aws_services/managed_control_tower:
+    - text: "As an AWS Advanced Consulting partner, we specialize in optimizing cloud governance with AWS Control Tower. AWS Control Tower offers a comprehensive solution for governing multi-account AWS environments, simplifying complex infrastructure management."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/aws-control.php"
+
+  utter_govt_practice:
+    - text: "Government agencies are embracing cloud technology for enhanced services. As an AWS partner, we provide secure and scalable solutions tailored for government needs. Explore our AWS-powered offerings, backed by certifications and expertise in government compliance for secure and compliant workloads."
+      buttons:
+        - title: "Learn More"
+          payload: "https://hitachi-systems.co.in/govt-practices.php"
+        - title: "AWS Offerings"
+          payload: "aws_overview"
+        - title: "Contact Us"
+          payload: "https://hitachi-systems.co.in/contact.php"
+
+  utter_contact_us:
+    - text: "Got questions? Contact us for quick assistance!"
+      buttons:
+        - title: "Contact Us"
+          payload: "https://hitachi-systems.co.in/contact.php"
+    - text: "Need help? We're here for you! Get in touch now."
+      buttons:
+        - title: "Contact Us"
+          payload: "https://hitachi-systems.co.in/contact.php"
+    - text: "Have a query? Contact Us by clicking below."
+      buttons:
+        - title: "Contact Us"
+          payload: "https://hitachi-systems.co.in/contact.php"
+    - text: "Looking for support? Contact our team anytime!"
+      buttons:
+        - title: "Contact Us"
+          payload: "https://hitachi-systems.co.in/contact.php"
+    - text: "Want to connect? Reach out and we'll assist you promptly!"
+      buttons:
+        - title: "Contact Us"
+          payload: "https://hitachi-systems.co.in/contact.php"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

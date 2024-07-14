@@ -1,0 +1,67 @@
+version: "3.1"
+
+rules:
+  - rule: greet
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - rule: Describe Hitachi
+    steps:
+      - intent: company_info
+      - action: utter_company_info
+
+  - rule: Describe clients
+    steps:
+      - intent: company_clients
+      - action: utter_company_clients
+
+  - rule: Describe solutions and services
+    steps:
+      - intent: company_overview
+      - action: utter_company_overview
+
+  - rule: Describe aws services
+    steps:
+      - intent: aws_overview
+      - action: utter_aws_overview
+
+  - rule: Explain solutions
+    steps:
+      - intent: company_info_solutions
+      - action: utter_company_info_solutions
+
+  - rule: Explain services
+    steps:
+      - intent: company_info_services
+      - action: utter_company_info_services
+
+  - rule: Explain AWS services
+    steps:
+      - intent: aws_services
+      - action: utter_aws_services
+
+  - rule: Explain government practice
+    steps:
+      - intent: govt_practice
+      - action: utter_govt_practice
+
+  - rule: Contact Us
+    steps:
+      - intent: contact_us
+      - action: utter_contact_us
+
+  - rule: Ask the user to rephrase in case of low NLU confidence
+    steps:
+      - intent: nlu_fallback
+      - action: utter_please_rephrase

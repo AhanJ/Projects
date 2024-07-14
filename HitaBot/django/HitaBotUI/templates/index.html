@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HitaBot</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/static/assets/icons/robot.png"
+    />
+    <link rel="stylesheet" href="/static/styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+  </head>
+  <body>
+    <main><img src="/static/assets/logo.svg" alt="bg" class="main-bg" /></main>
+    <div class="chatbot-frame" id="chatbot-frame">
+      <div class="chatbot-header">
+        <div class="bot-info">
+          <div class="bot-img"></div>
+          <div class="bot-status">
+            <h5>HitaBot</h5>
+            <div class="online-icon">
+              <img src="/static/assets/icons/online.png" alt="online" />
+              <p>Online</p>
+            </div>
+          </div>
+        </div>
+        <div class="close-bot" id="close-bot"></div>
+      </div>
+      <div class="chatbot-chat" id="chatbox">
+        <div class="sender-info bot">
+          <div class="bot-icon"></div>
+          <p>HitaBot</p>
+        </div>
+        <div class="message outgoing">
+          <div class="chat-bubble outgoing">
+            <p>Hey, how may I help you?</p>
+          </div>
+        </div>
+      </div>
+      <div class="chatbot-input">
+        <textarea
+          class="user-input"
+          name="user-input"
+          id="user-input"
+          autofocus
+          placeholder="Type your message..."
+        ></textarea>
+        <button class="send-text" id="send-text" disabled></button>
+      </div>
+    </div>
+    <div class="open-bot" id="open-bot"></div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

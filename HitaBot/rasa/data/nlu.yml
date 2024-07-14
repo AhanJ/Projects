@@ -1,0 +1,349 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: company_info
+    examples: |
+      - tell me about Hitachi Systems India
+      - what does Hitachi Systems do?
+      - give me an overview of your company
+      - how can you help me?
+      - what do you offer
+
+  - intent: company_clients
+    examples: |
+      - Who are your major clients?
+      - Can you list some of the clients you work with?
+      - Tell me about your top clients.
+      - Which companies use your services?
+      - Who are your key customers?
+      - Can you share some of your clients?
+      - I'd like to know about the businesses you serve.
+      - Who are your prominent clients?
+      - Do you have any well-known clients?
+      - Can you provide examples of companies that are your clients?
+      - What clients do you have?
+
+  - intent: company_overview
+    examples: |
+      - give me details about your IT solutions
+      - give me details about your solutions
+      - what solutions do you offer?
+      - solutions
+      - solutions offered
+      - give me details about your IT services
+      - give me details about your services
+      - what services do you offer?
+      - what are the services you have?
+      - services offered
+      - services
+      - tell me about your services
+      - tell me about your solutions
+      - tell me about your offerrings
+
+  - intent: company_info_solutions/digital_workplace_solutions
+    examples: |
+      - Tell me about your digital workplace solutions.
+      - What are the end user computing solutions you offer?
+      - Explain your digital workplace services.
+
+  - intent: company_info_solutions/security_solutions
+    examples: |
+      - What security solutions do you provide?
+      - Tell me about your endpoint and server security solutions.
+      - What is perimeter protection?
+      - Explain your data security solutions.
+      - Do you have advanced security solutions?
+
+  - intent: company_info_solutions/automation_orchestration_solutions
+    examples: |
+      - What automation and orchestration solutions do you offer?
+      - Tell me about your business service management solutions.
+      - What cloud and automation management services do you provide?
+      - Explain your service portfolio management.
+
+  - intent: company_info_solutions/cloud_data_centre_solutions
+    examples: |
+      - What cloud and data centre solutions do you offer?
+      - Tell me about your cloud and data centre solutions.
+
+  - intent: company_info_services/infrastructure_managed_services
+    examples: |
+      - What infrastructure managed services do you provide?
+      - Tell me about your IT infrastructure management.
+      - What audit and intelligence services do you offer?
+      - Explain your bot services.
+
+  - intent: company_info_services/data_center_services
+    examples: |
+      - What data center services do you offer?
+      - Tell me about your data center consulting.
+      - What is software defined datacentre?
+      - Explain your professional services for data centers.
+
+  - intent: company_info_services/managed_security_services
+    examples: |
+      - What managed security services do you provide?
+      - Tell me about your cyber security services.
+      - What are managed SOC services?
+
+  - intent: company_info_services/cloud_services
+    examples: |
+      - What cloud services do you offer?
+      - Tell me about your cloud advisory and assessment services.
+      - What cloud migration and implementation services do you provide?
+      - Explain your managed cloud services for AWS and Azure.
+
+  - intent: company_info_services/device_as_a_service
+    examples: |
+      - What is device as a service?
+      - Tell me about your end to end lifecycle services for devices.
+      - device as a service
+      - daas
+      - DAAS
+      - D-A-A-S
+      - d-a-a-s
+      - device service
+
+  - intent: aws_overview
+    examples: |
+      - Can you provide more details about your AWS services?
+      - I'd like to know more about AWS offerings, could you explain?
+      - What are the benefits of using AWS services?
+      - Tell me about AWS and its features.
+      - Explain the services offered by AWS.
+      - Can you provide an overview of AWS services and their capabilities?
+      - What services does AWS offer in terms of machine learning?
+      - Tell me about AWS security services.
+      - Explain how AWS helps in managing resources.
+      - aws services overview
+      - aws overview
+      - amazon web services
+      - amazon web services overview
+      - aws services
+      - aws
+      - amazon
+      - AWS
+
+  - intent: aws_services/storage_services
+    examples: |
+      - What storage services are available on AWS?
+      - Can you explain AWS storage offerings and their features?
+      - Tell me about AWS storage options for data backup.
+      - What are the benefits of using AWS storage solutions?
+      - Explain how AWS handles data durability and availability in storage services.
+      - Can you provide an overview of AWS Storage?
+      - aws storage
+
+  - intent: aws_services/ec2_windows_services
+    examples: |
+      - What services do you offer for running Windows on EC2 instances?
+      - Can you explain your EC2 Windows services and their features?
+      - Tell me about your solutions for managing Windows workloads on EC2.
+      - What benefits can I expect from using your Windows-based EC2 instances?
+      - How do you handle Windows updates and patches for EC2 instances?
+      - Can you provide guidance on configuring Windows services on EC2?
+      - Do you offer specialized support for Windows workloads on EC2?
+      - EC2 windows
+      - EC2 services
+
+  - intent: aws_services/cloud_migration_services
+    examples: |
+      - Can you explain your AWS cloud migration services?
+      - What are the benefits of using AWS for cloud migration?
+      - Tell me about your solutions for migrating workloads to AWS.
+      - Do you offer assistance with planning and executing cloud migrations on AWS?
+      - Can you provide guidance on choosing the right AWS migration strategy?
+      - What tools and resources does AWS provide for cloud migration?
+      - Are there any best practices or case studies you can share for successful cloud migrations on AWS?
+      - aws cloud migration
+      - cloud migration
+
+  - intent: aws_services/migration_readiness_assessment
+    examples: |
+      - Can you explain what a migration readiness assessment is?
+      - How do you assess if an organization is ready for migration?
+      - What are the outcomes of a migration readiness assessment?
+      - Do you provide recommendations based on assessment results?
+      - migration readiness assessment
+      - readiness assessment
+      - ready to migrate
+
+  - intent: aws_services/managed_database_services
+    examples: |
+      - Can you explain what AWS managed database services are?
+      - What databases can AWS manage for me?
+      - How does AWS RDS (Relational Database Service) fit into managed database services?
+      - What are the benefits of using AWS managed databases like RDS?
+      - Can you provide examples of AWS managed database services, especially RDS?
+      - aws rds
+      - managed database service
+      - managed db
+      - cloud db
+      - cloud database
+      - rds
+      - rdbms
+      - relational database
+      - data base
+      - managed database
+
+  - intent: aws_services/next_gen_managed_services
+    examples: |
+      - Can you provide more details about the containerized environment support in Next-Gen Managed Services?
+      - How does Next-Gen Managed Services integrate DevOps/DevSecOps practices?
+      - Can you explain the serverless architecture support offered in Next-Gen Managed Services?
+      - What does "service intelligence" mean in the context of Next-Gen Managed Services?
+      - How is IT infrastructure automation achieved in Next-Gen Managed Services?
+      - Next-Gen Managed Services
+
+  - intent: aws_services/architected_review
+    examples: |
+      - How does the Architected Review service assess applications and workloads against best practices?
+      - improvement opportunities identified during Architected Reviews
+      - What is the process for tracking progress over time in Architected Review services?
+      - How do your solution architect experts help bring solutions up to best-practice standards?
+      - Can you explain how Architected Review services optimize AWS usage for maximum efficiency?
+      - Architected Review services
+      - Architected Review
+
+  - intent: aws_services/aws_security_solutions
+    examples: |
+      - Can you explain the range of aws security solutions offered by your service?
+      - How do your aws security solutions integrate with existing systems and workflows?
+      - What are the key features of your aws security solutions?
+      - aws security solutions
+      - aws security
+
+  - intent: aws_services/content_delivery_solutions
+    examples: |
+      - Can you explain how AWS CloudFront works as a content delivery network (CDN)?
+      - What types of content can be delivered efficiently using AWS CloudFront?
+      - How does AWS CloudFront help businesses improve their content delivery speed?
+      - Can you provide examples of industries or use cases that benefit from AWS CloudFront?
+      - What are the key advantages of using AWS CloudFront for content delivery?
+      - Can you explain how your content delivery solutions work?
+      - What types of content can be delivered efficiently using your service?
+      - How do your solutions improve content delivery speed and performance?
+      - What are the key features and advantages of using your aws content delivery services?
+      - aws content delivery solutions
+      - aws content delivery
+
+  - intent: aws_services/systems_manager
+    examples: |
+      - AWS Systems Manager for security and governance solutions
+      - features of AWS Systems Manager
+      - How does Systems Manager provide visibility across various standards and frameworks for cloud governance?
+      - security and control measures implemented using AWS Systems Manager
+      - AWS Systems Manager
+      - Systems Manager
+
+  - intent: aws_services/api_gateway
+    examples: |
+      - Can you explain how aws API Gateway works and its key features?
+      - How does API Gateway help in managing and securing APIs?
+      - What are the benefits of using API Gateway for API management?
+      - How does API Gateway integrate with other AWS services for comprehensive API management?
+      - aws api gateway
+      - api gateway
+      - api management
+
+  - intent: aws_services/config
+    examples: |
+      - Can you explain what AWS Config is and how it works?
+      - What are the key features and benefits of using AWS Config?
+      - How does AWS Config help in monitoring and managing AWS resources?
+      - How does AWS Config integrate
+      - aws config
+      - config management
+      - aws configuration management
+
+  - intent: aws_services/managed_control_tower
+    examples: |
+      - Can you explain what AWS Managed Control Tower is and its key functionalities?
+      - How does AWS Managed Control Tower help in establishing a secure and compliant AWS environment?
+      - What are the benefits of using AWS Managed Control Tower for cloud governance?
+      - How does AWS Managed Control Tower integrate with other AWS services for centralized control and monitoring?
+      - AWS Managed Control Tower
+      - AWS Control Tower
+      - Control tower
+
+  - intent: govt_practice
+    examples: |
+      - Can you tell me more about your government practice?
+      - What government services do you offer?
+      - How does your company work with government agencies?
+      - What expertise does your team have in government contracts?
+      - Do you have specific solutions tailored for government needs?
+      - Can you explain how your technology supports government operations?
+
+  - intent: contact_us
+    examples: |
+      - How can I get in touch with your support team?
+      - What is the best way to contact you for more information?
+      - Can you provide your contact details for further inquiries?
+      - How do I reach customer service?
+      - Who should I contact for technical support?
+      - contact info
+      - get in touch
+      - email
+      - phone
+      - address
+      - customer support
+      - customer service
+      - support
+      - help
+      - need help
