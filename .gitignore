@@ -1,2 +1,10 @@
-
+# *
+# !*/
+# !*.*
+*.exe
 .DS_Store
+node_modules
+temp.cpp
+.vscode
+temp
+Misc
